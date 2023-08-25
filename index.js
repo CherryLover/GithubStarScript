@@ -6,7 +6,6 @@
 // @author       Your Name
 // @match        https://github.com/*/*
 // @grant        GM_xmlhttpRequest
-// @grant        GM_download
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
