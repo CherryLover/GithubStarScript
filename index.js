@@ -1,13 +1,17 @@
 // ==UserScript==
 // @name         GitHub Star Network Request
-// @namespace    jiangjiwei
-// @version      0.2
-// @description  Send a network request when starring a GitHub repository.
+// @namespace    https://github.com/CherryLover/GithubStarScript
+// @version      0.3
+// @description  GitHub Star 自动记录到 Notion Database
 // @author       jiangjiwei
+// @supportURL	 https://github.com/CherryLover/GithubStarScript
+// @downloadURL  https://greasyfork.org/zh-CN/scripts/473844-github-star-network-request
+// @updateURL    https://greasyfork.org/zh-CN/scripts/473844-github-star-network-request
 // @match        https://github.com/*/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
+// @license      MIT
 // ==/UserScript==
 
 (function () {
