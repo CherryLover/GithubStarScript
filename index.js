@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         GitHub Star Network Request
-// @namespace    your-namespace
+// @namespace    jiangjiwei
 // @version      0.2
 // @description  Send a network request when starring a GitHub repository.
-// @author       Your Name
+// @author       jiangjiwei
 // @match        https://github.com/*/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
