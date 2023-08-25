@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub Star Network Request
 // @namespace    https://github.com/CherryLover/GithubStarScript
-// @version      0.3
+// @version      0.4
 // @description  GitHub Star 自动记录到 Notion Database
 // @author       jiangjiwei
 // @supportURL	 https://github.com/CherryLover/GithubStarScript
@@ -29,12 +29,10 @@
         }
 
         const endpointURL = 'https://api.notion.com/v1/pages/';
-        console.log("prepare request to " + endpointURL)
 
         var repositoryName = document.querySelector('strong[itemprop="name"]').textContent;
 
         var currentUrl = window.location.href;
-        console.log("当前页面的 URL：" + currentUrl);
         if (currentUrl == "https://github.com") {
             repositoryName = "GitHub";
         } else {
@@ -230,9 +228,6 @@
         }
     }
 
-
-    console.log("hello world")
-
     const starButton = document.querySelector('button.js-toggler-target');
 
     console.log('star button is null ' + (starButton == null));
@@ -244,9 +239,6 @@
             sendNetworkRequest();
         });
     }
-
-    const userToken = GM_getValue('notionToken', ''); // Load saved value
-    console.log('User Notion Token:', userToken);
 
 
     window.addEventListener('keydown', function (event) {
